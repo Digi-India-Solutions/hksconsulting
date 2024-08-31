@@ -4,11 +4,11 @@ const fs = require('fs'); // Import the fs module
 
 // Configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
-    service: "gmail", // Use the Gmail service
-    auth: {
-      user: "gouravpanchal80107@gmail.com",
-      pass: "oodm paoa sfiz jcxg", // Replace with your app password if 2-Step Verification is enabled
-    }
+  service: "gmail", // Use 'service' instead of 'host' for Gmail
+  auth: {
+    user: "gouravpanchal80107@gmail.com",
+    pass: "phbj zozm zwzw jngl", // Use the app password if 2-Step Verification is enabled
+  },
 });
 
 const createRecord = async (req, res) => {
